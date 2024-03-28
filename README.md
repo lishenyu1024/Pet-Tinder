@@ -72,7 +72,7 @@ The user interface will be simple and engaging, focusing on ease of use. We will
 ```rake
 git clone https://github.com/lishenyu1024/web/tree/master.git
 ```
-## Backend/pet_backend/projectsetting
+## Backend/pet_backend
 
 - Install the required packages
 ```rake
