@@ -92,7 +92,12 @@ python manage.py runserver
 ```rake
 npm install
 ```
-
+- Start the Frontend development server
+```rake
+ng serve
+```
+- Access the application in your browser at http://localhost:4200
+- 
 ## Other Requirements
 
 - Acknowledgments: Cite all sources used for development.
