@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row rowsize" *ngFor="let item of likes.reverse()">
+        <div class="col-9 " >
+            <div class="card " >
+                <div class="row rowsize2 ">
+                  <div class="col-md-2">
+                    <img src="{{item.pet.image}}" class=" img imagesize rounded-start" alt="...">
+                  </div>
+                  <div class="col-md-6 des ">
+                    <div class="card-body">
+                      <h5 class="card-title">{{item.pet.name}} 
+                        
+                     </h5>
+                      <p class="card-text">{{item.pet.description}}</p>
+                      <p  class="card-text">Quantity-{{item.quantity}}</p>
+                      <p class="card-text"><small class="text-muted"> Added on {{item.created_date.slice(0,10)}}</small></p>
+                      
+                    </div>
+                  </div>
+                  <div class="col-sm-2">
+                    <button (click)="removeFromLikesFunction(item.id)" class=" button-5 btn " type="button">remove</button>
+                    <button (click)="placeActivityLikesFunction(item.pet.id)" type="button" class=" button-4 btn ">confirm</button>
+                </div>
+                </div>
+              </div>
+        </div>
+       
+    </div>
+    <div *ngIf="likes.length==0">
+      <img class="image" src="assets/images/empty likes.png" alt="">
+      <p class="nop">Your don't have any liked activities!</p>
+    </div>
+</div>

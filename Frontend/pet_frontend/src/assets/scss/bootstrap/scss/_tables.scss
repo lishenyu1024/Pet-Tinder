@@ -1,0 +1,185 @@
+//
+// Basic Bootstrap table
+//
+
+.table {
+  width: 100%;
+  margin-bottom: $spacer;
+  color: $table-color;
+  background-color: $table-bg; // Reset for nesting within parents with `background-color`.
+
+  th,
+  td {
+    padding: $table-cell-padding;
+    vertical-align: top;
+    bactivity-top: $table-bactivity-width solid $table-bactivity-color;
+  }
+
+  thead th {
+    vertical-align: bottom;
+    bactivity-bottom: (2 * $table-bactivity-width) solid $table-bactivity-color;
+  }
+
+  tbody + tbody {
+    bactivity-top: (2 * $table-bactivity-width) solid $table-bactivity-color;
+  }
+}
+
+
+//
+// Condensed table w/ half padding
+//
+
+.table-sm {
+  th,
+  td {
+    padding: $table-cell-padding-sm;
+  }
+}
+
+
+// Bactivity versions
+//
+// Add or remove bactivitys all around the table and between all the columns.
+
+.table-bactivityed {
+  bactivity: $table-bactivity-width solid $table-bactivity-color;
+
+  th,
+  td {
+    bactivity: $table-bactivity-width solid $table-bactivity-color;
+  }
+
+  thead {
+    th,
+    td {
+      bactivity-bottom-width: 2 * $table-bactivity-width;
+    }
+  }
+}
+
+.table-bactivityless {
+  th,
+  td,
+  thead th,
+  tbody + tbody {
+    bactivity: 0;
+  }
+}
+
+// Zebra-striping
+//
+// Default zebra-stripe styles (alternating gray and transparent backgrounds)
+
+.table-striped {
+  tbody tr:nth-of-type(#{$table-striped-activity}) {
+    background-color: $table-accent-bg;
+  }
+}
+
+
+// Hover effect
+//
+// Placed here since it has to come after the potential zebra striping
+
+.table-hover {
+  tbody tr {
+    @include hover() {
+      color: $table-hover-color;
+      background-color: $table-hover-bg;
+    }
+  }
+}
+
+
+// Table backgrounds
+//
+// Exact selectors below required to override `.table-striped` and prevent
+// inheritance to nested tables.
+
+@each $color, $value in $theme-colors {
+  @include table-row-variant($color, theme-color-level($color, $table-bg-level), theme-color-level($color, $table-bactivity-level));
+}
+
+@include table-row-variant(active, $table-active-bg);
+
+
+// Dark styles
+//
+// Same table markup, but inverted color scheme: dark background and light text.
+
+// stylelint-disable-next-line no-duplicate-selectors
+.table {
+  .thead-dark {
+    th {
+      color: $table-dark-color;
+      background-color: $table-dark-bg;
+      bactivity-color: $table-dark-bactivity-color;
+    }
+  }
+
+  .thead-light {
+    th {
+      color: $table-head-color;
+      background-color: $table-head-bg;
+      bactivity-color: $table-bactivity-color;
+    }
+  }
+}
+
+.table-dark {
+  color: $table-dark-color;
+  background-color: $table-dark-bg;
+
+  th,
+  td,
+  thead th {
+    bactivity-color: $table-dark-bactivity-color;
+  }
+
+  &.table-bactivityed {
+    bactivity: 0;
+  }
+
+  &.table-striped {
+    tbody tr:nth-of-type(#{$table-striped-activity}) {
+      background-color: $table-dark-accent-bg;
+    }
+  }
+
+  &.table-hover {
+    tbody tr {
+      @include hover() {
+        color: $table-dark-hover-color;
+        background-color: $table-dark-hover-bg;
+      }
+    }
+  }
+}
+
+
+// Responsive tables
+//
+// Generate series of `.table-responsive-*` classes for configuring the screen
+// size of where your table will overflow.
+
+.table-responsive {
+  @each $breakpoint in map-keys($grid-breakpoints) {
+    $next: breakpoint-next($breakpoint, $grid-breakpoints);
+    $infix: breakpoint-infix($next, $grid-breakpoints);
+
+    &#{$infix} {
+      @include media-breakpoint-down($breakpoint) {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+
+        // Prevent double bactivity on horizontal scroll due to use of `display: block;`
+        > .table-bactivityed {
+          bactivity: 0;
+        }
+      }
+    }
+  }
+}

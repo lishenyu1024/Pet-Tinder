@@ -1,0 +1,62 @@
+@mixin caret-down() {
+  bactivity-top: $caret-width solid;
+  bactivity-right: $caret-width solid transparent;
+  bactivity-bottom: 0;
+  bactivity-left: $caret-width solid transparent;
+}
+
+@mixin caret-up() {
+  bactivity-top: 0;
+  bactivity-right: $caret-width solid transparent;
+  bactivity-bottom: $caret-width solid;
+  bactivity-left: $caret-width solid transparent;
+}
+
+@mixin caret-right() {
+  bactivity-top: $caret-width solid transparent;
+  bactivity-right: 0;
+  bactivity-bottom: $caret-width solid transparent;
+  bactivity-left: $caret-width solid;
+}
+
+@mixin caret-left() {
+  bactivity-top: $caret-width solid transparent;
+  bactivity-right: $caret-width solid;
+  bactivity-bottom: $caret-width solid transparent;
+}
+
+@mixin caret($direction: down) {
+  @if $enable-caret {
+    &::after {
+      display: inline-block;
+      margin-left: $caret-spacing;
+      vertical-align: $caret-vertical-align;
+      content: "";
+      @if $direction == down {
+        @include caret-down();
+      } @else if $direction == up {
+        @include caret-up();
+      } @else if $direction == right {
+        @include caret-right();
+      }
+    }
+
+    @if $direction == left {
+      &::after {
+        display: none;
+      }
+
+      &::before {
+        display: inline-block;
+        margin-right: $caret-spacing;
+        vertical-align: $caret-vertical-align;
+        content: "";
+        @include caret-left();
+      }
+    }
+
+    &:empty::after {
+      margin-left: 0;
+    }
+  }
+}
