@@ -67,6 +67,32 @@ The user interface will be simple and engaging, focusing on ease of use. We will
 - Front-end and back-end communication: REST API design pattern, using Django REST framework
 - Map API integration: Google Maps API or OpenStreetMap API
 
+## Installation
+ - Clone the repository to your local machine.
+```rake
+git clone https://github.com/Itshari891/Mstore_eCommerce-FullStack.git
+```
+## Backend/pet_backend/projectsetting
+
+- Install the required packages
+```rake
+pip install -r requirement.txt
+```
+- Set up the database
+```rake
+python manage.py migrate
+```
+- Start the Backend development server
+```rake
+python manage.py runserver
+```
+## Frontend/pet_frontend
+
+- Install the required packages
+```rake
+npm install
+```
+
 ## Other Requirements
 
 - Acknowledgments: Cite all sources used for development.
