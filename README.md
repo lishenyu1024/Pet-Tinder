@@ -97,7 +97,7 @@ npm install
 ng serve
 ```
 - Access the application in your browser at http://localhost:4200
-- 
+  
 ## Other Requirements
 
 - Acknowledgments: Cite all sources used for development.
