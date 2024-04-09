@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="row rowcss" >
+        <div class="col-lg-3 col-md-6 col-sm-12 pb-1 column" *ngFor="let pet of pets">
+                <div class="card cardouter">
+                    <div class="card bactivity-0 cardimage">
+                        <img class="img-thumbnail bactivity-0  rounded-start" src="{{pet.image}}" alt="">
+                    </div>
+                    <div class="card-body bactivity-left bactivity-right text-center p-0 pt-4 pb-3">
+                        <h6 class="text-truncate mb-3">{{pet.name}}</h6>
+                        <div class="d-flex justify-content-center">
+                            <h6>Rs.{{pet.price}}</h6><h6 class="text-muted ml-2"></h6>
+                        </div>
+                    </div>
+                    <div class="card-footer   bactivity cardf">
+                        <button (click)="fetchId(pet.id)"  type="button" class="btn  text-light  bactivity-0   detail">View Detail</button>
+                        <button  (click)="addtolikesCategoryFunction(pet.id)"   type="button" class="btn text-dark  bactivity-0 addtolikes">Like</button>
+                    </div>
+                </div>
+            </div>
+        </div>    
+</div>

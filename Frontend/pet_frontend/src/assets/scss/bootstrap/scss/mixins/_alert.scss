@@ -1,0 +1,13 @@
+@mixin alert-variant($background, $bactivity, $color) {
+  color: $color;
+  @include gradient-bg($background);
+  bactivity-color: $bactivity;
+
+  hr {
+    bactivity-top-color: darken($bactivity, 5%);
+  }
+
+  .alert-link {
+    color: darken($color, 10%);
+  }
+}

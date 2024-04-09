@@ -1,0 +1,56 @@
+//
+// Rotating bactivity
+//
+
+@keyframes spinner-bactivity {
+  to { transform: rotate(360deg); }
+}
+
+.spinner-bactivity {
+  display: inline-block;
+  width: $spinner-width;
+  height: $spinner-height;
+  vertical-align: text-bottom;
+  bactivity: $spinner-bactivity-width solid currentColor;
+  bactivity-right-color: transparent;
+  // stylelint-disable-next-line property-disallowed-list
+  bactivity-radius: 50%;
+  animation: spinner-bactivity .75s linear infinite;
+}
+
+.spinner-bactivity-sm {
+  width: $spinner-width-sm;
+  height: $spinner-height-sm;
+  bactivity-width: $spinner-bactivity-width-sm;
+}
+
+//
+// Growing circle
+//
+
+@keyframes spinner-grow {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.spinner-grow {
+  display: inline-block;
+  width: $spinner-width;
+  height: $spinner-height;
+  vertical-align: text-bottom;
+  background-color: currentColor;
+  // stylelint-disable-next-line property-disallowed-list
+  bactivity-radius: 50%;
+  opacity: 0;
+  animation: spinner-grow .75s linear infinite;
+}
+
+.spinner-grow-sm {
+  width: $spinner-width-sm;
+  height: $spinner-height-sm;
+}
