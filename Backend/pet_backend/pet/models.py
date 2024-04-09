@@ -13,7 +13,7 @@ class Pet(models.Model):
     image=models.ImageField(upload_to="pet_images")
     description=models.CharField(max_length=300)
     price=models.DecimalField(max_digits=20,decimal_places=2)
-    category=models.ForeignKey(Category,related_name='pets',on_delete=models.CASCADE)
+    category=models.ForeignKey(Category,related_name='pets',on_delete=models.CASCADE,null=True, blank=True)
 
     def __str__(self) -> str:
         return self.name

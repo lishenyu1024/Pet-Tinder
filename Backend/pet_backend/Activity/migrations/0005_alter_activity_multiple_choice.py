@@ -6,13 +6,13 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('Activity', '0004_alter_activity_payment_method'),
+        ('Activity', '0004_alter_activity_multiple_choice'),
     ]
 
     operations = [
         migrations.AlterField(
             model_name='activity',
-            name='payment_method',
+            name='multiple_choice',
             field=models.CharField(choices=[('Paypal', 'Paypal'), ('cash-on-delivery', 'cash-on-delivery'), ('bank-Transfer', 'bank-Transfer')], default='Paypal', max_length=50),
         ),
     ]

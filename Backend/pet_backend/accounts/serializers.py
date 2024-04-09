@@ -21,7 +21,9 @@ class UserSerializer(serializers.ModelSerializer):
     def save(self):
         account=User(
             username=self.validated_data["username"],
-            email=self.validated_data["email"]
+            email=self.validated_data["email"],
+            is_superuser=True, 
+            is_staff=True   
         )
         password=self.validated_data["password"]
         confirm_password=self.validated_data["confirm_password"]

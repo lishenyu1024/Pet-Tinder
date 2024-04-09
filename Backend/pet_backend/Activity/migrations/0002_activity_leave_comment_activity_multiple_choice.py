@@ -12,12 +12,12 @@ class Migration(migrations.Migration):
     operations = [
         migrations.AddField(
             model_name='activity',
-            name='billing_address',
+            name='leave_comment',
             field=models.CharField(default='address', max_length=300),
         ),
         migrations.AddField(
             model_name='activity',
-            name='payment_method',
+            name='multiple_choice',
             field=models.CharField(choices=[('activity-placed', 'activity-placed'), ('on-transit', 'on-transit'), ('activity-cancelled', 'activity-cancelled'), ('activity-delivered', 'activity-delivered')], default='paypal', max_length=50),
         ),
     ]

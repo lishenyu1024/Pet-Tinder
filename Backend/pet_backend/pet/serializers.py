@@ -12,7 +12,7 @@ class PetAddSerializer(serializers.ModelSerializer):
             "description":{"required":True},
             "image":{"required":True},
             "price":{"required":True},
-            "category":{"required":True}
+            "category":{"required":False}
         }
     
 class PetListSerializer(serializers.ModelSerializer):
