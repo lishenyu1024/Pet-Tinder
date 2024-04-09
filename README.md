@@ -37,17 +37,19 @@ The user interface will be simple and engaging, focusing on ease of use. We will
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/homepage.png)
 
 - Pet's profile creation page including name, age, availability, and photo upload fields
-Log in to http://127.0.0.1:8000/admin,
-Username:admin
-Password:admin
+- Log in to http://127.0.0.1:8000/admin,
+- Username:admin
+- Password:admin
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/addpet.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/6e358ccca99016b6a86142c21a0e4094e1ffd95d/readme/adminpet.png)
 
 
 - Main feed showing pet profiles and activities
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/profile.png)
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/activity.png)
 
 - Weather interface for viewing and joining local pet events
-![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/profile.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/6e358ccca99016b6a86142c21a0e4094e1ffd95d/readme/weather.png)
 
 ## Architecture and Technical Requirements
 
