@@ -1,4 +1,4 @@
-# hw-proposal
+# petTinder-proposal
 
 The team lead's repo for this assignment will become the project repo for the team.
 For this assignment, submit the link for the project lead's repo in Canvas.
@@ -34,19 +34,20 @@ Develop a Pet Tinder website that allows pet owners to create profiles for their
 The user interface will be simple and engaging, focusing on ease of use. We will use Figma to design the interface, including:
 
 - A landing page with a clear call-to-action (e.g., "pet tinder")
-![image](https://raw.githubusercontent.com/lishenyu1024/pics/4b3865681ab145d5226e0df31a0b745176ed0cf1/1.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/homepage.png)
 
 - Pet's profile creation page including name, age, availability, and photo upload fields
-登陆http://127.0.0.1:8000/admin,
+Log in to http://127.0.0.1:8000/admin,
 Username:admin
 Password:admin
-  ![image](https://raw.githubusercontent.com/lishenyu1024/pics/4b3865681ab145d5226e0df31a0b745176ed0cf1/2.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/addpet.png)
+
 
 - Main feed showing pet profiles and activities
-![image](https://raw.githubusercontent.com/lishenyu1024/pics/4b3865681ab145d5226e0df31a0b745176ed0cf1/3.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/activity.png)
 
 - Weather interface for viewing and joining local pet events
-![image](https://raw.githubusercontent.com/lishenyu1024/pics/4b3865681ab145d5226e0df31a0b745176ed0cf1/4.png)
+![image](https://raw.githubusercontent.com/lishenyu1024/pics/c44ee82982ac33506a03b4da696ee6a3a7b5dab3/readme/profile.png)
 
 ## Architecture and Technical Requirements
 
