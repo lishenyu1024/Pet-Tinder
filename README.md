@@ -25,7 +25,7 @@ Develop a Pet Tinder website that allows pet owners to create profiles for their
 ### Registered User
 - As a registered user, I can:
   - Log in with previously provided credentials
-  - Create a profile for my pet and list it for public activities
+  - Create a profile for my pet and list it for activities
   - Add photos
   - Join a listed public activity
 
@@ -56,21 +56,21 @@ The user interface will be simple and engaging, focusing on ease of use. We will
 ### Backend
 - **Language and Framework:** Python & Django
   - Utilize Django's back-end logic and database interaction capabilities.
-  - Django ORM interacts with MySQL database to manage user and pet information.
+  - Django ORM interacts with SQLite database to manage user and pet information.
 
 ### Frontend
 - **Framework:** Angular
   - Creating user interfaces using Angular's two-way data binding and modular development methods.
 
 ### Database
-- **Type:** MySQL
-  - Use MySQL database to store user and pet data, including activity information.
+- **Type:** SQLite
+  - Use SQLite database to store user and pet data, including activity information.
 
 ## Other Technologies
 
 - Authentication and security: JWT (JSON Web Tokens)
 - Front-end and back-end communication: REST API design pattern, using Django REST framework
-- Map API integration: Google Maps API or OpenStreetMap API
+- Weather API integration: OpenWeatherMap API
 
 ## Installation
 
@@ -131,6 +131,6 @@ ng serve
 
 ### Roles and Responsibilities
 
-- **Shenyu Li:** Project management, front-end development, UI design, and map API integration.
+- **Shenyu Li:** Project management, front-end development, UI design, and weather API integration.
 - **Letian Qin:** Back-end development, database management.
 
