@@ -17,11 +17,11 @@ class Activity(models.Model):
     activityed_date=models.DateTimeField(auto_now_add=True)
     leave_comment=models.CharField(max_length=300,default="address")
     payment_options=(
-        ("Paypal","Paypal"),
-        ("cash-on-delivery","cash-on-delivery"),
-        ("bank-Transfer","bank-Transfer")
+        ("Pal","Pal"),
+        ("play-date","play-date"),
+        ("transfer","transfer")
     )
-    multiple_choice=models.CharField(max_length=50,choices=payment_options,default="Paypal")
+    multiple_choice=models.CharField(max_length=50,choices=payment_options,default="Pal")
 
     def __str__(self) -> str:
         return self.pet.name

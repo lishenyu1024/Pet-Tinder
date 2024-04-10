@@ -13,6 +13,6 @@ class Migration(migrations.Migration):
         migrations.AlterField(
             model_name='activity',
             name='multiple_choice',
-            field=models.CharField(choices=[('Paypal', 'Paypal'), ('cash-on-delivery', 'cash-on-delivery'), ('bank-Transfer', 'bank-Transfer')], default='Paypal', max_length=50),
+            field=models.CharField(choices=[('Pal', 'Pal'), ('play-date', 'play-date'), ('transfer', 'transfer')], default='Pal', max_length=50),
         ),
     ]
