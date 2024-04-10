@@ -48,10 +48,10 @@ The user interface will be simple and engaging, focusing on ease of use, includi
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/5a04bef10829b810bd99cf3ffcc51477cb3025e3/readme/createprofile.png)
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/ab40aa935d15a87cd9acee83ec60f1ce8a334752/readme/editactivity.png)
 
-- Different users create their own activities
+- Main feed showing pet profiles and activities
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/ab40aa935d15a87cd9acee83ec60f1ce8a334752/readme/8activity.png)
 
-- Main page showing pet profiles and activities
+- Activity detail page
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/5a04bef10829b810bd99cf3ffcc51477cb3025e3/readme/internster-like.png)
 
 - Click on the one you are interested in and go to the confirmation page, where you can confirm to cancel or proceed to the next step.
