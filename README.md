@@ -131,6 +131,10 @@ ng serve
 ## Other Requirements
 
 - Acknowledgments: Cite all sources used for development.
+  1. Python Django Tutorial: https://www.youtube.com/watch?v=rHux0gMZ3Eg
+  2. Angular Tutorial: https://www.youtube.com/watch?v=k5E2AVpwsko
+  3. JSON Web Tokens: https://jwt.io/introduction
+  4. OpenWeatherMap API guide: https://openweathermap.org/guide
 - Reproducibility: Provide detailed instructions for setting up the development environment and running the application in the README.md.
 - Deployment: Initially set up against a local development server, with a comprehensive privacy policy if deployed publicly.
 
