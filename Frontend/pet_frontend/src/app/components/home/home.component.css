@@ -77,3 +77,27 @@ span{
 .catalign{
     margin-left: 150px;
 }
+
+.weather-container-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Use min-height to ensure that it occupies at least the height of the entire viewport */
+    margin: 0; /* Remove any default margins */
+    padding: 0; /* Remove any default padding */
+}
+
+.weather-container {
+    background-color: #d8bfd8;
+    padding: 10px;
+    display: flex; /* Make this container a flex container */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-item {
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px 0;
+}

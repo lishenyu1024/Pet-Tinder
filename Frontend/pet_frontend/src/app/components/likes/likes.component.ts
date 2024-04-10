@@ -19,7 +19,7 @@ export class LikesComponent implements OnInit {
   }
   placeActivityLikesFunction(id:any){
     localStorage.setItem("id",id)
-    this.router.navigateByUrl('activity')
+    this.router.navigateByUrl('place-activity')
   }
   removeFromLikesFunction(id:any){
     this.service.removeFromLikesService(id).then(res=>res.json()).then(data=>console.log(data))

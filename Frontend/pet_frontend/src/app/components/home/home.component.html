@@ -23,7 +23,19 @@
   </div>
 <div class="container">
     
-
+ <!-- weather add  -->
+ <div class="weather-container">
+  <p><strong>Current Weather:</strong></p>
+  <ul>
+    <li><strong>Main Weather:</strong> {{ weatherData.weather[0].main }}</li>
+    <li><strong>Clouds:</strong> {{ weatherData.clouds.all }}%</li>
+    <li><strong>Temperature:</strong> {{ ((weatherData.main.temp - 273.15) * 9 / 5 + 32).toFixed(2) }}°F</li>
+    <li><strong>Feels Like:</strong> {{ ((weatherData.main.feels_like - 273.15) * 9 / 5 + 32).toFixed(2) }}°F</li>
+    <li><strong>Sunrise:</strong> {{ weatherData.sys.sunrise * 1000 | date:'shortTime' }}</li>
+    <li><strong>Sunset:</strong> {{ weatherData.sys.sunset * 1000 | date:'shortTime' }}</li>
+    <li><strong>Visibility:</strong> {{ weatherData.visibility }} meters</li>
+  </ul>
+</div>
 
     <!-- all pets -->
     <div class="row rowcss" >

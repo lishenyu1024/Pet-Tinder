@@ -14,7 +14,7 @@
         </a>
         <ul class="dropdown-menu">
           <li><a (click)="logoutFunction()" class="dropdown-item"  >Logout</a></li>
-          <li><a *ngIf="jwt=='true'" class="dropdown-item" routerLink="/admin/dashboard" >Dashboard</a></li>
+          <li><a *ngIf="jwt=='true'" class="dropdown-item" routerLink="admin/dashboard/pet" >Create Profile</a></li>
         </ul>
       </li></div>
       <div class="col-3" *ngIf="username==null">

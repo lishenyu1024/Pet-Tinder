@@ -10,8 +10,8 @@ import { PettinderService } from 'src/app/services/pettinder.service';
 })
 export class PlaceActivityComponent implements OnInit {
   activity=new FormGroup({
-    "billing_address":new FormControl('',Validators.required),
-    "payment_method":new FormControl('',Validators.required)
+    "leave_comment":new FormControl('',Validators.required),
+    "multiple_choice":new FormControl('',Validators.required)
   })
   constructor(private service:PettinderService,private activeroute:ActivatedRoute,private router:Router) { }
   pet:any

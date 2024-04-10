@@ -39,7 +39,7 @@ export class LoginComponent implements OnInit {
         localStorage.setItem("jwt",jwt)
         localStorage.setItem("user",this.username)
         if (data.jwt==true){
-          setTimeout(window.location.href="/admin/dashboard",500)
+          setTimeout(window.location.href="/",500)
         }
         else{
           setTimeout(window.location.href="/",500)

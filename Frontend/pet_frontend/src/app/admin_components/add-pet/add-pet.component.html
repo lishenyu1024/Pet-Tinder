@@ -20,11 +20,6 @@
                 <label for="formFile" class="form-label">Image</label>
                 <input class="form-control" type="file" id="formFile"  (change)="onChange($event)">
               </div>
-              <!-- category -->
-              <select class="form-select" aria-label="Default select example" formControlName="category" >
-                    <option value="">categories</option>
-                    <option  value="{{item.id}}" *ngFor="let item of category">{{item.name}}</option>
-              </select>
               <button class="btn btn-info">Add</button>
             </form>
         </div>
