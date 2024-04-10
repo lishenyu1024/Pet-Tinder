@@ -85,7 +85,7 @@ The user interface will be simple and engaging, focusing on ease of use, includi
 
  - Clone the repository to your local machine.
 ```rake
-git clone https://github.com/lishenyu1024/web/tree/master.git
+git clone https://github.com/nuwebdev/hw05-proposal-lishenyu1024/tree/main
 ```
 
 ## cd Backend/pet_backend
