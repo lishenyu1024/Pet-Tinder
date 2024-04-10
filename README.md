@@ -31,7 +31,7 @@ Develop a Pet Tinder website that allows pet owners to create profiles for their
 
 ## User Interface Design
 
-The user interface will be simple and engaging, focusing on ease of use. We will use Figma to design the interface, including:
+The user interface will be simple and engaging, focusing on ease of use, including:
 - Account Registration Page (You must register to access)
 ![image](https://raw.githubusercontent.com/lishenyu1024/pics/5a04bef10829b810bd99cf3ffcc51477cb3025e3/readme/register.png)
 
