@@ -145,6 +145,6 @@ ng serve
 
 ### Roles and Responsibilities
 
-- **Shenyu Li:** Project management, front-end development, UI design, and weather API integration.
-- **Letian Qin:** Back-end development, database management.
+- **Shenyu Li:** Front-end development, UI design, and weather API integration.
+- **Letian Qin:** Back-end development, database management, and project management.
 
