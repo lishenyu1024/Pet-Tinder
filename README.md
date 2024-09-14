@@ -1,4 +1,4 @@
-# Pet Tinder-proposal
+# Pet Tinder
 
 
 # Team
